@@ -3,10 +3,9 @@ import sys
 import boto
 from boto.exception import S3ResponseError
 from boto.s3.key import Key
-
-from src.constants import FILE_NAME, BUCKET_NAME
-from src.file_operations import get_file_path
-from src.secret import AWS_ACCESS_KEY, AWS_SECRET_KEY
+from constants import FILE_NAME, BUCKET_NAME
+from file_operations import get_file_path
+from secret import AWS_ACCESS_KEY, AWS_SECRET_KEY
 
 
 def percent_cb(complete, total):
